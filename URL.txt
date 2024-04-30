@@ -1,0 +1,3 @@
+mongodb+srv://Miguel_lemos21:Migamiga01!@cluster0.pxwg5mo.mongodb.net/
+
+vscode - extensão MongoDB
