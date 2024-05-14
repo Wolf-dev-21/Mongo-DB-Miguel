@@ -1,0 +1,9 @@
+operadores de comparação
+
+	padrão			Mongo
+<  -- menos que -------------- $lt 
+>  -- maior que -- ------------$gt 
+<= -- menor ou igual a  ------ $lte
+>=  -- maior que ou igual a -- $gte
+= -- igual a ----------------- $eq
+!=  -- diferente de ---------- $ne

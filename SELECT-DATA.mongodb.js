@@ -1,16 +1,33 @@
-const database = 'libri-database'
+/* DEFINE O NOME DO BANCO DE DADOS */
+// const database = 'libri-database';
 
-const collection = 'libri-collection'
+//ACESSA O BANCO DE DADOS livri-database
+use('libri-database');
 
-//acessa o banco de dados database
-use(database);
+/* SELECIONA TODOS OS DADOS DE TODOS OS ARQUIVOS DA COLLECTION */
+db['libri-collection'].find();
 
+/* ##################################################################################################################### */
 
+/* SELECIONA DADOS BASEADOS EM UM CRITÉRIO DE BUSCA */
+// const database = 'libri-database';
+use('libri-database');
+db['libri-collection'].find({"categoria":"Ficção Científica"});
 
-// db[collection].find()
+/* ##################################################################################################################### */
 
-/* seleciona os dados baseados em um critério de básico */
+/* SELECIONA DADOS BASEADOS EM UM CRITÉRIO DE BUSCA */
+// const database = 'libri-database';
+use('libri-database');
+db['libri-collection'].find({"categoria":"Ficção Científica"}, {"_id":0, "codigo":0, "imagem":0});
 
-db['libri-collection'].find({
-    "categoria":"elAssoInquebravel"
-})
+/* SELECIONA DADOS BASEADOS EM UM CRITÉRIO DE BUSCA */
+// const database = 'libri-database';
+use('libri-database');
+db['libri-collection'].find({},{"_id":0, "codigo":0, "imagem":0});
+
+/* ##################################################################################################################### */
+/* SELECIONA DADOS BASEADOS EM UM CRITÉRIO DE BUSCA POR UMA PARTE DE STRING DE UM CAMPO */
+const database = 'libri-database';
+use('libri-database');
+db['libri-collection'].find({"titulo":/robôs/i}, {"_id":0, "codigo":0, "imagem":0});
