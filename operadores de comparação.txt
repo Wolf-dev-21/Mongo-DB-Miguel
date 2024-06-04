@@ -7,3 +7,4 @@ operadores de comparação
 >=  -- maior que ou igual a -- $gte
 = -- igual a ----------------- $eq
 !=  -- diferente de ---------- $ne
+

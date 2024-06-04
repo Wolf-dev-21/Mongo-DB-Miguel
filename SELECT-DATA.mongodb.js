@@ -3,7 +3,6 @@
 
 //ACESSA O BANCO DE DADOS livri-database
 use('libri-database');
-
 /* SELECIONA TODOS OS DADOS DE TODOS OS ARQUIVOS DA COLLECTION */
 db['libri-collection'].find();
 
